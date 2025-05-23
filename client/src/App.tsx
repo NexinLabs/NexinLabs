@@ -7,7 +7,9 @@ import { RiGamepadLine } from 'react-icons/ri'
 import { TbApi } from 'react-icons/tb'
 import { IoMdAdd } from 'react-icons/io'
 import { CiMonitor } from 'react-icons/ci'
-import { BiBot } from 'react-icons/bi'
+import { BiBot, BiTrophy } from 'react-icons/bi'
+
+
 
 function App() {
     const aboutRef = useRef<HTMLDivElement>(null)
@@ -31,7 +33,7 @@ function App() {
                 <div className="header-content">
                     <div className="logo">
                         <img className="logo-icon w-12 h-12" style={{ background: 'white' }} height={50} width={50} src='/favicon.svg'/>
-                        <span className="logo-text">NexinLabs</span>
+                        <span className="logo-text text-white">NexinLabs</span>
                     </div>
                     <div
                         className="mobile-menu-toggle"
@@ -306,6 +308,22 @@ function App() {
                         </motion.div>
 
                         <motion.div
+                            className="project-card"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            whileHover={{ y: -10 }}
+                        >
+                            <div className="project-icon">
+                                <BiTrophy/>
+                            </div>
+                            <h3>Blastix Esports</h3>
+                            <p>A platform for esports team management and tournament organization.</p>
+                        </motion.div>
+
+
+                        <motion.div
                             className="project-card future-card"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -362,10 +380,10 @@ function App() {
                     <a href="#" aria-label="Discord">
                         <FaDiscord />
                     </a>
-                    <a href="#" aria-label="GitHub">
+                    <a href="https://github.com/NexinLabs" aria-label="GitHub">
                         <FaGithub />
                     </a>
-                    <a href="#" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/company/nexinlabs/" aria-label="LinkedIn">
                         <FaLinkedin />
                     </a>
                 </div>
