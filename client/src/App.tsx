@@ -1,3 +1,4 @@
+import './App.css'
 import { useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaGithub, FaDiscord, FaLinkedin } from 'react-icons/fa'
@@ -5,9 +6,8 @@ import { FaGithub, FaDiscord, FaLinkedin } from 'react-icons/fa'
 import { RiGamepadLine } from 'react-icons/ri'
 import { TbApi } from 'react-icons/tb'
 import { IoMdAdd } from 'react-icons/io'
-
-
-import './App.css'
+import { CiMonitor } from 'react-icons/ci'
+import { BiBot } from 'react-icons/bi'
 
 function App() {
     const aboutRef = useRef<HTMLDivElement>(null)
@@ -247,7 +247,7 @@ function App() {
                             <h3>Spruce</h3>
                             <p>Esports management tool designed to streamline team organization and tournament operations.</p>
                             <div className="project-links">
-                                <a href="#" className="project-link">Learn More</a>
+                                <a href="https://sprucbot.tech" className="project-link">Learn More</a>
                             </div>
                         </motion.div>
 
@@ -265,7 +265,43 @@ function App() {
                             <h3>Flapi</h3>
                             <p>A versatile mock data API that provides developers with realistic test data for application development.</p>
                             <div className="project-links">
-                                <a href="#" className="project-link">Learn More</a>
+                                <a href="https://flapi.sprucbot.tech" className="project-link">Learn More</a>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className="project-card "
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            whileHover={{ y: -10 }}
+                        >
+                            <div className="project-icon">
+                                <BiBot />
+                            </div>
+                            <h3>Gameonix Community Bot</h3>
+                            <p>A community-driven bot designed to enhance the gaming experience on Discord.</p>
+                            <div className="project-links">
+                                <a href="https://github.com/nexinlabs/gameonix-dc" className="project-link">Learn More</a>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className="project-card "
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            whileHover={{ y: -10 }}
+                        >
+                            <div className="project-icon">
+                                <CiMonitor />
+                            </div>
+                            <h3>Uptime Client</h3>
+                            <p>A powerful uptime monitoring and managing tool designed to keep your services online and responsive.</p>
+                            <div className="project-links">
+                                <a href="https://uptime-client.vercel.app/" className="project-link">Learn More</a>
                             </div>
                         </motion.div>
 
@@ -278,10 +314,10 @@ function App() {
                             whileHover={{ y: -10 }}
                         >
                             <div className="project-icon">
-                                <IoMdAdd />
+                                <IoMdAdd/>
                             </div>
                             <h3>Future Projects</h3>
-                            <p>More innovative tools and platforms coming soon to expand our ecosystem of open-source solutions.</p>
+                            <p>Innovative tools and platforms coming soon to expand our ecosystem of open-source solutions.</p>
                         </motion.div>
                     </div>
                 </div>
