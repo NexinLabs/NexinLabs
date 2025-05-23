@@ -320,6 +320,9 @@ function App() {
                             </div>
                             <h3>Blastix Esports</h3>
                             <p>A platform for esports team management and tournament organization.</p>
+                            <div className="project-links">
+                                <a href="https://blastixesports.in" className="project-link">Learn More</a>
+                            </div>
                         </motion.div>
 
 
