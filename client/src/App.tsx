@@ -69,7 +69,7 @@ function App() {
                             >
                                 Vision
                             </li>
-                            <li
+                            {/* <li
                                 onClick={() => { scrollToSection(projectsRef); setMobileMenuOpen(false); }}
                                 tabIndex={0}
                                 role="button"
@@ -82,7 +82,7 @@ function App() {
                                 }}
                             >
                                 Projects
-                            </li>
+                            </li> */}
                             <li
                                 onClick={() => { scrollToSection(teamRef); setMobileMenuOpen(false); }}
                                 tabIndex={0}
@@ -129,7 +129,7 @@ function App() {
                             >
                                 Vision
                             </motion.li>
-                            <motion.li
+                            {/* <motion.li
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.2 }}
@@ -145,7 +145,7 @@ function App() {
                                 }}
                             >
                                 Projects
-                            </motion.li>
+                            </motion.li> */}
                             <motion.li
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
@@ -177,13 +177,13 @@ function App() {
                 >
                     <h1>Empowering Innovation Through Technology, Research, and Development</h1>
                     <p>NexinLabs is a tech-focused organization building impactful, scalable solutions through real-world innovation.</p>
-                    <motion.button
+                    {/* <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => scrollToSection(projectsRef)}
                     >
                         Explore Our Projects
-                    </motion.button>
+                    </motion.button> */}
                 </motion.div>
             </section>
 
@@ -221,7 +221,7 @@ function App() {
                 </div>
             </section>
 
-            <section ref={projectsRef} className="projects-section">
+            {/* <section ref={projectsRef} className="projects-section">
                 <div className="section-container">
                     <motion.div
                         className="section-header"
@@ -342,7 +342,7 @@ function App() {
                         </motion.div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section ref={teamRef} className="team-section">
                 <div className="section-container">
